@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <Import Project="..\tModLoader.targets"/>
+    <PropertyGroup>
+        <AssemblyName>ThePlayground</AssemblyName>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+    <ItemGroup>
+      <Folder Include="Assets\Audio\" />
+    </ItemGroup>
+</Project>

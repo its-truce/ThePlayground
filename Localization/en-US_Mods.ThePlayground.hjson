@@ -1,0 +1,6 @@
+Projectiles: {
+	Bolt.DisplayName: Bolt
+	Circle.DisplayName: Circle
+	WaterTest.DisplayName: Water Test
+	FireTest.DisplayName: Fire Test
+}
