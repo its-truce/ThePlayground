@@ -84,7 +84,7 @@ public class WaterRenderTarget : ParticleRenderTarget
 
         if (needToDrawRenderTarget)
         {
-            graphicsDevice.PresentationParameters.RenderTargetUsage = RenderTargetUsage.PreserveContents;
+            // graphicsDevice.PresentationParameters.RenderTargetUsage = RenderTargetUsage.PreserveContents;
             RenderTargetBinding[] oldTargets = RenderTarget.SwapTo();
 
             spriteBatch.Restart(end: false, transformMatrix: Main.GameViewMatrix.EffectMatrix);

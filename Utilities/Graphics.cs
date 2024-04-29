@@ -8,6 +8,11 @@ namespace ThePlayground.Utilities;
 public static class Graphics
 {
     /// <summary>
+    /// For easy access to the EmptyTexture file path.
+    /// </summary>
+    public static readonly string EmptyTexture = $"{nameof(ThePlayground)}/Assets/Textures/EmptyTexture";
+    
+    /// <summary>
     ///     Sets the current render target to the provided one.
     /// </summary>
     /// <param name="target">The render target to swap to</param>

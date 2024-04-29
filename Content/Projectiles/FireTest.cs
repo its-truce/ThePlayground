@@ -3,12 +3,13 @@ using Terraria;
 using Terraria.ModLoader;
 using ThePlayground.Content.Particles;
 using ThePlayground.Core.Graphics;
+using ThePlayground.Utilities;
 
 namespace ThePlayground.Content.Projectiles;
 
 public class FireTest : ModProjectile
 {
-    public override string Texture => $"{nameof(ThePlayground)}/Assets/Textures/EmptyTexture";
+    public override string Texture => Graphics.EmptyTexture;
     private ref float MetaballTimer => ref Projectile.ai[0];
 
     public override void SetDefaults()

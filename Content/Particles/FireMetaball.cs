@@ -69,8 +69,8 @@ public class FireRenderTarget : ParticleRenderTarget
     {
         if (Main.gameMenu)
             return;
-        
-        graphicsDevice.PresentationParameters.RenderTargetUsage = RenderTargetUsage.PreserveContents;
+        //
+        // graphicsDevice.PresentationParameters.RenderTargetUsage = RenderTargetUsage.PreserveContents;
         RenderTargetBinding[] oldTargets = RenderTarget.SwapTo();
 
         spriteBatch.Restart(end: false, transformMatrix: Main.GameViewMatrix.EffectMatrix);
@@ -85,7 +85,7 @@ public class FireRenderTarget : ParticleRenderTarget
 
     public override void DrawRenderTarget(SpriteBatch spriteBatch)
     {
-        spriteBatch.Restart(SpriteSortMode.Immediate);
+        // spriteBatch.Restart(SpriteSortMode.Immediate);
         
         Effect effect = Graphics.GetEffect("Fire");
         effect.Parameters["uTime"].SetValue((float)Main.timeForVisualEffects / 30);

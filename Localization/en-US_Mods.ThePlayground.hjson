@@ -3,4 +3,12 @@ Projectiles: {
 	Circle.DisplayName: Circle
 	WaterTest.DisplayName: Water Test
 	FireTest.DisplayName: Fire Test
+	RevolvingSpouts.DisplayName: Revolving Spouts
+}
+
+Items: {
+	WaterShield: {
+		DisplayName: Water Shield
+		Tooltip: ""
+	}
 }
